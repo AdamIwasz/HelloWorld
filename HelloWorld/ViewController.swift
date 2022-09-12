@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "Welcome to My First App",
                                                 message: "Hello World",
                                                 preferredStyle: UIAlertController.Style.alert)
-        alertController
+        alertController.addAction(UIAlertAction(title: "OK",
+                                                style: UIAlertAction.Style.default,
+                                                handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
     
 }
