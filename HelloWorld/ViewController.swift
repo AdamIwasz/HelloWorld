@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         if let wordToLookup = selectedButton.titleLabel?.text{
             let meaning = emojiDict[wordToLookup]
             
-            let alertController = UIAlertController(title: "Meaning",
+            let alertController = UIAlertController(title: "Znaczenie emotki",
                                                     message: meaning,
                                                     preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title: "OK",
